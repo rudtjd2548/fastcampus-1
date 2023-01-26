@@ -1,0 +1,74 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  width: 100vmin;
+  height: 75vmin;
+}
+
+.asset-img {
+  display: none;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+.ready-screen, .finish-screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  user-select: none;
+}
+
+.title-img {
+  width: 60vmin;
+  margin-bottom: 15vmin;
+
+  opacity: 0;
+  transform: scale(2);
+}
+
+.play-img, .replay-img {
+  width: 11vmin;
+  cursor: pointer;
+  
+  transform: scale(0);
+}
+
+.finish-screen {
+  color: #fff;
+  font-family: 'Jua';
+  opacity: 0;
+  pointer-events: none;
+}
+
+.finish-screen > .distance {
+  font-size: 15vmin;
+}
+
+.finish-screen > .coin {
+  font-size: 8vmin;
+  margin-bottom: 8vmin;
+  color: gold;
+}

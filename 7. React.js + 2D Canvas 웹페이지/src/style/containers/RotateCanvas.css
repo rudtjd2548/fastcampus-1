@@ -1,0 +1,29 @@
+.rotate-canvas-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 5rem;
+}
+.rotate-canvas-wrapper > canvas {
+  width: 50vmin;
+  height: 50vmin;
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.rotate-canvas-wrapper > aside {
+  width: 50vmin;
+}
+.rotate-canvas-wrapper > aside > h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+.rotate-canvas-wrapper > aside > h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.rotate-canvas-wrapper > aside > p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#night-city-img {
+  position: fixed;
+  bottom: 0;
+  object-position: bottom;
+  object-fit: cover;
+  width: 100%;
+  height: 30%;
+  filter: brightness(1.5)
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+KR&display=swap');
+@import './reset.css';
+
+html, body {
+  --color-border: #938F87;
+  --color-bg: #C7C2B8;
+  --color-text: #1B1B19;
+
+  --border01: 1px solid var(--color-border);
+  --border02: 6px double var(--color-border);
+
+  font-family: 'Fjalla One', 'Noto Sans KR', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  overflow-x: hidden;
+}
+
+.app {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1 > header {
+  height: 8rem;
+  box-sizing: border-box;
+  border-bottom: var(--border01);
+  display: flex;
+  justify-content: space-between;
+}
+.section-1 > header > h1 {
+  font-size: 5rem;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+.section-1 > header > ul {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+.section-1 > main {
+  flex-grow: 1;
+  padding: 1rem 0;
+  display: flex;
+}
+.section-1 > main > div {
+  box-sizing: border-box;
+  border: var(--border02);
+  flex-grow: 1;
+}
+
+.section-2 {
+  background-color: var(--color-text);
+  margin: 1rem 0;
+  padding: 2rem 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9rem;
+  letter-spacing: -0.5rem;
+}
+
+.section-3 {
+  min-height: 50rem;
+  display: flex;
+  border-top: var(--border01);
+  border-bottom: var(--border01);
+}
+.section-3 > aside {
+  width: 40%;
+  border-right: var(--border01);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-3 > aside > .top {
+  font-size: 5rem;
+  padding: 2rem 0 2rem 1rem;
+  letter-spacing: -0.2rem;
+}
+.section-3 > aside > .bottom {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section-3 > aside > .bottom > img:nth-last-child(1) {
+  transform: scaleX(-1);
+}
+.section-3 > article { 
+  width: 60%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  line-height: 1.3;
+}
+
+footer {
+  min-height: 75vh;
+  background-color: var(--color-text);
+  color: #fff;
+  position: relative;
+}
+footer > .email {
+  position: absolute;
+  font-size: 12vmin;
+  bottom: 2rem;
+  right: 2rem;
+}
